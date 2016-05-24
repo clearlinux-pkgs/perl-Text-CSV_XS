@@ -4,7 +4,7 @@
 #
 Name     : perl-Text-CSV_XS
 Version  : 1.23
-Release  : 8
+Release  : 9
 URL      : http://search.cpan.org/CPAN/authors/id/H/HM/HMBRAND/Text-CSV_XS-1.23.tgz
 Source0  : http://search.cpan.org/CPAN/authors/id/H/HM/HMBRAND/Text-CSV_XS-1.23.tgz
 Summary  : Comma-Separated Values manipulation routines
@@ -69,7 +69,7 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files
 %defattr(-,root,root,-)
-/usr/lib/perl5/site_perl/5.22.0/x86_64-linux/Text/CSV_XS.pm
+/usr/lib/perl5/site_perl/5.24.0/x86_64-linux/Text/CSV_XS.pm
 
 %files doc
 %defattr(-,root,root,-)
@@ -77,4 +77,4 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files lib
 %defattr(-,root,root,-)
-/usr/lib/perl5/site_perl/5.22.0/x86_64-linux/auto/Text/CSV_XS/CSV_XS.so
+/usr/lib/perl5/site_perl/5.24.0/x86_64-linux/auto/Text/CSV_XS/CSV_XS.so
