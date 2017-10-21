@@ -4,7 +4,7 @@
 #
 Name     : perl-Text-CSV_XS
 Version  : 1.33
-Release  : 22
+Release  : 23
 URL      : https://www.cpan.org/authors/id/H/HM/HMBRAND/Text-CSV_XS-1.33.tgz
 Source0  : https://www.cpan.org/authors/id/H/HM/HMBRAND/Text-CSV_XS-1.33.tgz
 Summary  : Comma-Separated Values manipulation routines
