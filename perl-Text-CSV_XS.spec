@@ -4,13 +4,13 @@
 #
 Name     : perl-Text-CSV_XS
 Version  : 1.40
-Release  : 40
+Release  : 41
 URL      : https://cpan.metacpan.org/authors/id/H/HM/HMBRAND/Text-CSV_XS-1.40.tgz
 Source0  : https://cpan.metacpan.org/authors/id/H/HM/HMBRAND/Text-CSV_XS-1.40.tgz
 Summary  : Comma-Separated Values manipulation routines
 Group    : Development/Tools
 License  : Artistic-1.0-Perl
-Requires: perl-Text-CSV_XS-lib = %{version}-%{release}
+Requires: perl-Text-CSV_XS-perl = %{version}-%{release}
 BuildRequires : buildreq-cpan
 
 %description
@@ -24,25 +24,25 @@ combine fields into a CSV string and parse a CSV string into fields.
 %package dev
 Summary: dev components for the perl-Text-CSV_XS package.
 Group: Development
-Requires: perl-Text-CSV_XS-lib = %{version}-%{release}
 Provides: perl-Text-CSV_XS-devel = %{version}-%{release}
-Requires: perl-Text-CSV_XS = %{version}-%{release}
 Requires: perl-Text-CSV_XS = %{version}-%{release}
 
 %description dev
 dev components for the perl-Text-CSV_XS package.
 
 
-%package lib
-Summary: lib components for the perl-Text-CSV_XS package.
-Group: Libraries
+%package perl
+Summary: perl components for the perl-Text-CSV_XS package.
+Group: Default
+Requires: perl-Text-CSV_XS = %{version}-%{release}
 
-%description lib
-lib components for the perl-Text-CSV_XS package.
+%description perl
+perl components for the perl-Text-CSV_XS package.
 
 
 %prep
 %setup -q -n Text-CSV_XS-1.40
+cd %{_builddir}/Text-CSV_XS-1.40
 
 %build
 export http_proxy=http://127.0.0.1:9/
@@ -78,12 +78,12 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.28.2/x86_64-linux-thread-multi/Text/CSV_XS.pm
 
 %files dev
 %defattr(-,root,root,-)
 /usr/share/man/man3/Text::CSV_XS.3
 
-%files lib
+%files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.28.2/x86_64-linux-thread-multi/auto/Text/CSV_XS/CSV_XS.so
+/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/Text/CSV_XS.pm
+/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/auto/Text/CSV_XS/CSV_XS.so
