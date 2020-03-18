@@ -4,7 +4,7 @@
 #
 Name     : perl-Text-CSV_XS
 Version  : 1.41
-Release  : 42
+Release  : 43
 URL      : https://cpan.metacpan.org/authors/id/H/HM/HMBRAND/Text-CSV_XS-1.41.tgz
 Source0  : https://cpan.metacpan.org/authors/id/H/HM/HMBRAND/Text-CSV_XS-1.41.tgz
 Summary  : Comma-Separated Values manipulation routines
@@ -25,7 +25,6 @@ combine fields into a CSV string and parse a CSV string into fields.
 Summary: dev components for the perl-Text-CSV_XS package.
 Group: Development
 Provides: perl-Text-CSV_XS-devel = %{version}-%{release}
-Requires: perl-Text-CSV_XS = %{version}-%{release}
 Requires: perl-Text-CSV_XS = %{version}-%{release}
 
 %description dev
@@ -86,5 +85,5 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/Text/CSV_XS.pm
-/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/auto/Text/CSV_XS/CSV_XS.so
+/usr/lib/perl5/vendor_perl/5.30.2/x86_64-linux-thread-multi/Text/CSV_XS.pm
+/usr/lib/perl5/vendor_perl/5.30.2/x86_64-linux-thread-multi/auto/Text/CSV_XS/CSV_XS.so
