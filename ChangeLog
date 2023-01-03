@@ -1,3 +1,9 @@
+1.49	- 2023-01-03, H.Merijn Brand
+    * csv2xlsx --split=CxP [--split-label=C]
+    * Full documentation/manual for csv2xlsx
+    * Fix non-integer arguments to getline_all (issue 39)
+    * It's 2023
+
 1.48	- 2022-05-24, H.Merijn Brand
     * It's 2022
     * Update to Devel::PPPort-3.64
@@ -909,5 +915,5 @@
     * Moved encoding and decoding to XS; added binary mode; added
       print () and getline () methods.
 
-1998-06-05  Alan Citterman  <alan@mfgrtl.com>
+0.01	- 1998-06-05  Alan Citterman  <alan@mfgrtl.com>
     * Initial version
