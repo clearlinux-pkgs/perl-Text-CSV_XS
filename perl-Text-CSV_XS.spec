@@ -4,10 +4,10 @@
 # Using build pattern: cpan
 #
 Name     : perl-Text-CSV_XS
-Version  : 1.51
-Release  : 65
-URL      : https://cpan.metacpan.org/authors/id/H/HM/HMBRAND/Text-CSV_XS-1.51.tgz
-Source0  : https://cpan.metacpan.org/authors/id/H/HM/HMBRAND/Text-CSV_XS-1.51.tgz
+Version  : 1.52
+Release  : 66
+URL      : https://cpan.metacpan.org/authors/id/H/HM/HMBRAND/Text-CSV_XS-1.52.tgz
+Source0  : https://cpan.metacpan.org/authors/id/H/HM/HMBRAND/Text-CSV_XS-1.52.tgz
 Summary  : Comma-Separated Values manipulation routines
 Group    : Development/Tools
 License  : Artistic-1.0-Perl
@@ -45,10 +45,10 @@ perl components for the perl-Text-CSV_XS package.
 
 
 %prep
-%setup -q -n Text-CSV_XS-1.51
-cd %{_builddir}/Text-CSV_XS-1.51
+%setup -q -n Text-CSV_XS-1.52
+cd %{_builddir}/Text-CSV_XS-1.52
 pushd ..
-cp -a Text-CSV_XS-1.51 buildavx2
+cp -a Text-CSV_XS-1.52 buildavx2
 popd
 
 %build
