@@ -6,10 +6,10 @@
 # autospec commit: 94c6be0
 #
 Name     : perl-Text-CSV_XS
-Version  : 1.59
-Release  : 78
-URL      : https://cpan.metacpan.org/authors/id/H/HM/HMBRAND/Text-CSV_XS-1.59.tgz
-Source0  : https://cpan.metacpan.org/authors/id/H/HM/HMBRAND/Text-CSV_XS-1.59.tgz
+Version  : 1.60
+Release  : 79
+URL      : https://cpan.metacpan.org/authors/id/H/HM/HMBRAND/Text-CSV_XS-1.60.tgz
+Source0  : https://cpan.metacpan.org/authors/id/H/HM/HMBRAND/Text-CSV_XS-1.60.tgz
 Summary  : Comma-Separated Values manipulation routines
 Group    : Development/Tools
 License  : Artistic-1.0-Perl
@@ -47,10 +47,10 @@ perl components for the perl-Text-CSV_XS package.
 
 
 %prep
-%setup -q -n Text-CSV_XS-1.59
-cd %{_builddir}/Text-CSV_XS-1.59
+%setup -q -n Text-CSV_XS-1.60
+cd %{_builddir}/Text-CSV_XS-1.60
 pushd ..
-cp -a Text-CSV_XS-1.59 buildavx2
+cp -a Text-CSV_XS-1.60 buildavx2
 popd
 
 %build
